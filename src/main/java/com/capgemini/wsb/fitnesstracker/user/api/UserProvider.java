@@ -30,4 +30,10 @@ public interface UserProvider {
      */
     List<User> findAllUsers();
 
+    /**
+     * Retrieve simplified version of the users
+     *
+     * @return An {@link Optional} containing all the users, but in simplified version, that is: ID, first name, second name.
+     */
+    List<User> findSimplifiedUsers();
 }
